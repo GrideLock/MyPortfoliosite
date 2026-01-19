@@ -637,6 +637,7 @@ header{
         min-height: 100vh;
         justify-content: center;
         gap: 30px;
+        background: url('/MyPortfoliosite/img/mobilewave.png') no-repeat center center/cover !important;
     }
 
     .home-info {
@@ -680,6 +681,7 @@ header{
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
+        z-index: 1;
     }
 
     .home-info .btn-sci .sci a {
@@ -837,6 +839,7 @@ header{
         min-height: 100vh;
         justify-content: center;
         gap: 32px;
+        background: url('/MyPortfoliosite/img/mobilewave.png') no-repeat center center/cover !important;
     }
 
     .home-info {
