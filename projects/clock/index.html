@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="clock-container">
+            <h1>🕒 Digital Clock</h1>
+            
+            <div class="clock-display">
+                <div class="time">
+                    <span id="hours">00</span>
+                    <span class="separator">:</span>
+                    <span id="minutes">00</span>
+                    <span class="separator">:</span>
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+            
+            <div class="date-display">
+                <i class='bx bx-calendar'></i>
+                <span id="date"></span>
+            </div>
+            
+            <div class="format-toggle">
+                <button id="formatBtn" class="btn">
+                    <i class='bx bx-time'></i> Switch to 24-Hour Format
+                </button>
+            </div>
+            
+            <div class="timezone-info">
+                <i class='bx bx-world'></i>
+                <span id="timezone"></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

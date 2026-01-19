@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Application - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="timer-container">
+            <h1>⏱️ Timer Application</h1>
+            <div class="timer-display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            
+            <div class="controls">
+                <button id="startBtn" class="btn btn-start">
+                    <i class='bx bx-play'></i> Start
+                </button>
+                <button id="pauseBtn" class="btn btn-pause" disabled>
+                    <i class='bx bx-pause'></i> Pause
+                </button>
+                <button id="resetBtn" class="btn btn-reset">
+                    <i class='bx bx-reset'></i> Reset
+                </button>
+            </div>
+            
+            <div class="laps-container">
+                <h3>Lap Times</h3>
+                <button id="lapBtn" class="btn btn-lap" disabled>
+                    <i class='bx bx-time'></i> Lap
+                </button>
+                <ul id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

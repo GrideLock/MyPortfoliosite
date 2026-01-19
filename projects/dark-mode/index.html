@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Switcher - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="content-container">
+            <h1>🌙 Dark Mode Switcher</h1>
+            <p class="subtitle">Toggle between light and dark themes with persistent storage</p>
+            
+            <div class="theme-toggle">
+                <div class="toggle-container">
+                    <i class='bx bxs-sun sun-icon'></i>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <i class='bx bxs-moon moon-icon'></i>
+                </div>
+                <p class="theme-status">Current Theme: <span id="themeStatus">Light</span></p>
+            </div>
+            
+            <div class="demo-content">
+                <div class="card">
+                    <i class='bx bx-palette'></i>
+                    <h3>Beautiful Design</h3>
+                    <p>Experience a smooth transition between light and dark themes with carefully chosen colors.</p>
+                </div>
+                
+                <div class="card">
+                    <i class='bx bx-save'></i>
+                    <h3>Persistent Storage</h3>
+                    <p>Your theme preference is saved using localStorage and persists across sessions.</p>
+                </div>
+                
+                <div class="card">
+                    <i class='bx bx-mobile'></i>
+                    <h3>Responsive</h3>
+                    <p>Works perfectly on all devices and screen sizes with optimized performance.</p>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2>How It Works</h2>
+                <ul>
+                    <li><i class='bx bx-check-circle'></i> Click the toggle switch to change themes</li>
+                    <li><i class='bx bx-check-circle'></i> Theme preference is automatically saved</li>
+                    <li><i class='bx bx-check-circle'></i> Reload the page - your choice persists!</li>
+                    <li><i class='bx bx-check-circle'></i> Uses CSS variables for smooth transitions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

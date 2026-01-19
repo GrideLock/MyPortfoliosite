@@ -1,0 +1,30 @@
+/* Project Link Styles */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.view-project {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--Base-color);
+    color: var(--light-color);
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--Base-color);
+}
+
+.project-link:hover .view-project {
+    background: transparent;
+    transform: translateX(10px);
+}
+
+.project-link:hover .project-item {
+    cursor: pointer;
+}

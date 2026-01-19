@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="slider-container">
+            <h1>🖼️ Image Slider</h1>
+            <p class="subtitle">Navigate through beautiful images with smooth transitions</p>
+            
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="slide-content" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="slide-info">
+                                <h2>Mountain Landscape</h2>
+                                <p>Breathtaking views of majestic mountains</p>
+                                <img src="/MyPortfoliosite/img/mountain landscape.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-content" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="slide-info">
+                                <h2>Ocean Sunset</h2>
+                                <p>Beautiful sunset over the calm ocean</p>
+                                <img src="/MyPortfoliosite/img/ocean sunset.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-content" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="slide-info">
+                                <h2>City Lights</h2>
+                                <p>Vibrant city skyline at night</p>
+                                <img src="/MyPortfoliosite/img/citylights.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-content" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="slide-info">
+                                <h2>Forest Path</h2>
+                                <p>Peaceful walk through green forest</p>
+                                <img src="/MyPortfoliosite/img/forest.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-content" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="slide-info">
+                                <h2>Desert Dunes</h2>
+                                <p>Golden sand dunes under clear sky</p>
+                                <img src="/MyPortfoliosite/img/Desert.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+            </div>
+            
+            <div class="slider-controls">
+                <div class="dots" id="dotsContainer"></div>
+                <div class="counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">5</span>
+                </div>
+            </div>
+            
+            <div class="slider-options">
+                <button class="option-btn" id="autoplayBtn">
+                    <i class='bx bx-play'></i> Auto Play
+                </button>
+                <button class="option-btn" id="pauseBtn" style="display: none;">
+                    <i class='bx bx-pause'></i> Pause
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

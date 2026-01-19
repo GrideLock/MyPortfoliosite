@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Toggler - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="content-box">
+            <h1>🎨 Background Color Toggler</h1>
+            <p class="subtitle">Click the button to generate random background colors</p>
+            
+            <div class="color-display">
+                <div class="color-info">
+                    <h2>Current Color</h2>
+                    <div class="color-code" id="colorCode">#0f0f0f</div>
+                    <div class="color-preview" id="colorPreview"></div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="randomBtn" class="btn btn-random">
+                    <i class='bx bx-shuffle'></i> Random Color
+                </button>
+                <button id="gradientBtn" class="btn btn-gradient">
+                    <i class='bx bx-palette'></i> Random Gradient
+                </button>
+                <button id="copyBtn" class="btn btn-copy">
+                    <i class='bx bx-copy'></i> Copy Color
+                </button>
+            </div>
+            
+            <div class="color-history">
+                <h3><i class='bx bx-history'></i> Color History</h3>
+                <div id="historyContainer" class="history-grid"></div>
+                <button id="clearHistory" class="btn btn-clear">
+                    <i class='bx bx-trash'></i> Clear History
+                </button>
+            </div>
+            
+            <div class="preset-colors">
+                <h3><i class='bx bx-color-fill'></i> Preset Colors</h3>
+                <div class="preset-grid">
+                    <div class="preset-color" data-color="#f50538" style="background: #f50538;"></div>
+                    <div class="preset-color" data-color="#22c55e" style="background: #22c55e;"></div>
+                    <div class="preset-color" data-color="#3b82f6" style="background: #3b82f6;"></div>
+                    <div class="preset-color" data-color="#f59e0b" style="background: #f59e0b;"></div>
+                    <div class="preset-color" data-color="#8b5cf6" style="background: #8b5cf6;"></div>
+                    <div class="preset-color" data-color="#ec4899" style="background: #ec4899;"></div>
+                    <div class="preset-color" data-color="#14b8a6" style="background: #14b8a6;"></div>
+                    <div class="preset-color" data-color="#f97316" style="background: #f97316;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification">Color copied to clipboard!</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar - EmmaFinity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#project" class="back-btn">
+            <i class='bx bx-arrow-back'></i> Back to Portfolio
+        </a>
+        
+        <div class="calendar-container">
+            <h1>📅 Simple Calendar</h1>
+            <p class="subtitle">View dates and navigate through months</p>
+            
+            <div class="calendar-header">
+                <button class="nav-btn" id="prevMonth">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <div class="current-date">
+                    <h2 id="monthYear">January 2024</h2>
+                </div>
+                <button class="nav-btn" id="nextMonth">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+            </div>
+            
+            <div class="calendar-body">
+                <div class="weekdays">
+                    <div class="weekday">Sun</div>
+                    <div class="weekday">Mon</div>
+                    <div class="weekday">Tue</div>
+                    <div class="weekday">Wed</div>
+                    <div class="weekday">Thu</div>
+                    <div class="weekday">Fri</div>
+                    <div class="weekday">Sat</div>
+                </div>
+                <div class="days" id="calendarDays">
+                    <!-- Days will be generated here -->
+                </div>
+            </div>
+            
+            <div class="calendar-footer">
+                <button class="btn btn-today" id="todayBtn">
+                    <i class='bx bx-calendar-check'></i> Today
+                </button>
+                <div class="selected-date">
+                    <i class='bx bx-calendar'></i>
+                    <span id="selectedDate">Select a date</span>
+                </div>
+            </div>
+            
+            <div class="calendar-info">
+                <div class="info-card">
+                    <i class='bx bx-sun'></i>
+                    <div class="info-content">
+                        <h3>Current Day</h3>
+                        <p id="currentDay">Monday</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class='bx bx-calendar-week'></i>
+                    <div class="info-content">
+                        <h3>Week Number</h3>
+                        <p id="weekNumber">1</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class='bx bx-time'></i>
+                    <div class="info-content">
+                        <h3>Days in Month</h3>
+                        <p id="daysInMonth">31</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
